@@ -11,6 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  // ai에게 카테고리 나누는 버튼과 이미 입력한 상품 수정 버튼을 만드는 방법 질문
   List<FashionItem> wishlist = [];
 
   String search = "";
@@ -268,7 +269,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  @override
+  @override // ai에게 카테고리로 리스트의 제품 나누는 것 질문
   Widget build(BuildContext context) {
     final filtered = wishlist.where((item) {
       final searchMatch =
